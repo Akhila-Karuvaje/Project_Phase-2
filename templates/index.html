@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SkillSync</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #56d8ff, #457b9d, #a8dadc, #e63946);
+            background-size: 300% 300%;
+            animation: gradientCycle 15s ease infinite;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        @keyframes gradientCycle {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 50px;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .button-container {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .btn {
+            background: rgba(0, 0, 0, 0.75);
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 18px 40px;
+            border-radius: 15px;
+            border: 3px solid #f39c12;
+            animation: blinkBorder 2s infinite;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #e63946, #f39c12);
+            transform: scale(1.08);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        @keyframes blinkBorder {
+            0%, 100% { border-color: #f39c12; }
+            50% { border-color: transparent; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to SkillSync</h1>
+    <div class="button-container">
+        <a href="https://skill-sync-w3uc.onrender.com" class="btn">Job Title Recommendation</a>
+        <a href="https://resume-builder5.onrender.com" class="btn">Resume Builder</a>
+        <a href="https://resume-optimize3.onrender.com" class="btn">Resume Evaluator</a>
+        <a href="https://project-interview8.onrender.com" class="btn">Interview</a>
+    </div>
+</body>
+</html>
